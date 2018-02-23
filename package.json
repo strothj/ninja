@@ -1,9 +1,15 @@
 {
-  "name": "strothj-ninja",
-  "version": "1.0.0",
-  "main": "dist/index.js",
+  "name": "@strothj/ninja",
+  "version": "1.0.1",
+  "main": "./dist/index.js",
   "preferGlobal": true,
-  "bin": "dist/index",
+  "bin": {
+    "ninja": "./dist/index.js"
+  },
+  "files": [
+    "dist/*",
+    "dist/**/*"
+  ],
   "author": "strothj <jason@jasons.io>",
   "license": "MIT",
   "engines": {
