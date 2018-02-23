@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`removes comments 1`] = `
+"{
+  \\"compilerOptions\\": {
+    \\"target\\": \\"es5\\",                          
+    \\"module\\": \\"commonjs\\",                     
+    \\"strict\\": true,                           
+    \\"esModuleInterop\\": true                   
+  }
+}
+"
+`;
