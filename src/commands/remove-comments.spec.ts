@@ -15,7 +15,7 @@ it("removes comments", () => {
 
 function setReadFileSyncMock() {
   // prettier-ignore
-  require("fs").default.__setReadFileSync("tsconfig.json", `{
+  require("fs").default.readFileSync__set("tsconfig.json", `{
   "compilerOptions": {
     /* Basic Options */
     "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
@@ -75,5 +75,5 @@ function setReadFileSyncMock() {
 }
 
 function getWriteFileSyncMock(): { filename: string; fileContents: string } {
-  return require("fs").default.__getWriteFileSync();
+  return require("fs").default.writeFileSync__get();
 }
