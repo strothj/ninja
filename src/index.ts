@@ -5,6 +5,7 @@ import packageJson from "../package.json";
 import header from "./header";
 
 import removeComments from "./commands/remove-comments";
+import removeLogs from "./commands/remove-logs";
 
 let commandExecuted = false;
 
@@ -16,6 +17,10 @@ commander
   .action((filename: string) => {
     executeCommand("remove-comments", () => removeComments(filename));
   });
+
+commander.command("remove-logs [path]").action((path?: string) => {
+  executeCommand("remove-logs", () => removeLogs(path));
+});
 
 commander.parse(process.argv);
 
